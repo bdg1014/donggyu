@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script language="JavaScript">
+			<!-- www.tagin.net
+			function click() { 
+				if ((event.ctrlKey) || (event.shiftKey)) { 
+				   alert('키를 사용할 수 없습니다.'); 
+				}
+			
+			} 
+			document.onmousedown=click; 
+			document.onkeydown=click; 
+			-->
+			</script>
 		<title>동규</title>
 	</head>
-	<body><h1>비밀번호</h1>
+	<body><h1>내가 제일 아끼는 알파벳</h1>
+	<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+
 	<input onkeypress="enter_test()">
- 
+	
 	<script>
-    		function enter_test() {
-        		if ( window.event.keyCode == 13 ) {
-            			alert("비밀번호가 일치하지 않습니다.\n 힌트:인스타그램");
-        		}
-    		}
+    	function enter_test() {
+        	if (event.keyCode != 88) {
+				alert("틀렸습니다. \n힌트:인스타그램");
+			}
+			if (event.keyCode == 88) {
+				alert("https://bdg1014.github.io/diaryin2020/");
+        	}
+		}
 	</script>
 	</body>
 </html>	
